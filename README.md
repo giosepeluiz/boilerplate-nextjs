@@ -46,7 +46,7 @@ Onde:
 
 ### Z-Index
 
-Existem variáveis com z-index pré-definidos, para isso utilize `z-index: $z-indexes('VALOR')`, onde:
+Existem variáveis com z-index pré-definidos, para isso utilize, sem aspas, o padrão: `z-index: z-index(VALOR)`, onde:
 - **above** = 500
 - **modal** = 400
 - **overlay** = 300
