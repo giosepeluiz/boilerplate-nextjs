@@ -1,0 +1,59 @@
+// ==========================================================================
+// Color Scheme 1 Name
+// ==========================================================================
+
+$color-s1: (
+  's1-primary'  : #157bad,
+  's1-secondary': #06618c,
+  's1-success'  : #3cc368,
+  's1-warning'  : #f5a600,
+  's1-error'    : #ec5840,
+  's1-black'   : #000000,
+  's1-gray-1'   : #363636,
+  's1-gray-2'   : #4f4f4f,
+  's1-gray-3'   : #828282,
+  's1-gray-4'   : #bdbdbd,
+  's1-gray-5'   : #e0e0e0,
+  's1-white'    : #fcfcfc,
+);
+
+:root {
+    @each $name, $color in $color-s1 {
+      --color-#{$name}: #{$color};
+    }
+  }
+
+
+// ==========================================================================
+// Color Scheme 2 Name
+// ==========================================================================
+
+$color-s2: (
+  's2-primary'   : #3da6c8,
+  's2-secondary' : darken(#3da6c8, 12%),
+);
+
+:root {
+    @each $name, $color in $color-s2 {
+      --color-#{$name}: #{$color};
+    }
+  }
+
+// ==========================================================================
+// Social Media Colors
+// ==========================================================================
+
+$social-media-colors: (
+  'facebook'  : #3b5998,
+  'twitter'   : #00aced,
+  'linkedin'  : #0077b5,
+  'youtube'   : #cd201f,
+  'instagram' : #e4405f,
+  'github'    : #333,
+);
+
+:root {
+    @each $name, $color in $social-media-colors {
+      --color-#{$name}: #{$color};
+    }
+  }
