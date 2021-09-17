@@ -10,10 +10,12 @@ Este modelo básico inclui algumas alterações pessoais em relação ao projeto
 ## Esquema de pastas
 
 **SRC:** esta pasta inclui todas as partes do projeto, organizados por:
-- Components: todos os componentes;
-- Functions: todas as funções;
+- Components: arquivos de componentes;
+- Data: arquivos de dados em formato JSON;
+- Functions: funções para a parte lógica;
+- Models: classes utilizadas como modelos;
 - Pages: as páginas do projeto;
-- Styles: todos os estilos.
+- Styles: todos os estilos em SASS.
 
 **PUBLIC:** contem tudo aquilo que será de acesso público:
 - Icons: ícones a serem utilizados;
@@ -46,7 +48,7 @@ Onde:
 
 ### Z-Index
 
-Existem variáveis com z-index pré-definidos, para isso utilize `z-index: $z-indexes('VALOR')`, onde:
+Existem variáveis com z-index pré-definidos, para isso utilize, sem aspas, o padrão: `z-index: z-index(VALOR)`, onde:
 - **above** = 500
 - **modal** = 400
 - **overlay** = 300
