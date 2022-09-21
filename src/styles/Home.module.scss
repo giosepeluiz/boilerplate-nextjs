@@ -80,6 +80,14 @@
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
     width: 45%;
+  
+  }
+
+  @include breakpoint('small-up'){
+    .card {
+      width: 30%;
+      height: 100%;
+    }
   }
   
   .card:hover,

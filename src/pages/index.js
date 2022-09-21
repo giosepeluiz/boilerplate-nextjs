@@ -43,8 +43,18 @@ export default function Home() {
           <a
             href="https://github.com/giosepeluiz/boilerplate-nextjs/blob/main/README.md"
             className={styles.card}>
-            <h2>Leia as informações &rarr;</h2>
+            <h2>Informações &rarr;</h2>
             <p>Para saber como utilizar todos os recursos que o modelo oferece.</p>
+          </a>
+        
+          <a
+            href="https://github.com/giosepeluiz/boilerplate-nextjs/commits/main"
+            className={styles.card}>
+            <h2>Atualizações &rarr;</h2>
+            <p>
+              - 02 de setembro de 2021<br />
+              - 21 de setembro de 2022
+            </p>
           </a>
         </div>
       </main>
