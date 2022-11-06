@@ -1,6 +1,6 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
+import styles from "@/styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -46,14 +46,14 @@ export default function Home() {
             <h2>Informações &rarr;</h2>
             <p>Para saber como utilizar todos os recursos que o modelo oferece.</p>
           </a>
-        
+
           <a
             href="https://github.com/giosepeluiz/boilerplate-nextjs/commits/main"
             className={styles.card}>
             <h2>Atualizações &rarr;</h2>
             <p>
-              - 02 de setembro de 2021<br />
-              - 21 de setembro de 2022
+              - 02 de setembro de 2021
+              <br />- 21 de setembro de 2022
             </p>
           </a>
         </div>

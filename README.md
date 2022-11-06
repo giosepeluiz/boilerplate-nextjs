@@ -1,15 +1,17 @@
 # Modelo básico de Next.js
 
 Este modelo básico inclui algumas alterações pessoais em relação ao projeto padrão de **Next.js**, dentre elas:
+
 - Novo esquema de pastas;
 - Com arquivos pré-configurados;
 - Configurado para Typescript;
 - Eslint e Prettier configurados;
 - Toda a configuração foi feita usando Yarn.
 
-## Esquema de pastas
+## Esquema de Pastas
 
 **SRC:** esta pasta inclui todas as partes do projeto, organizados por:
+
 - Components: arquivos de componentes;
 - Data: arquivos de dados em formato JSON;
 - Functions: funções para a parte lógica;
@@ -18,6 +20,7 @@ Este modelo básico inclui algumas alterações pessoais em relação ao projeto
 - Styles: todos os estilos em SASS.
 
 **PUBLIC:** contem tudo aquilo que será de acesso público:
+
 - Icons: ícones a serem utilizados;
 - Images: todas as imagens;
 - Vectors: todos os vetores.
@@ -28,10 +31,10 @@ Este modelo básico inclui algumas alterações pessoais em relação ao projeto
 
 Por padrão este projeto utiliza o pré-processador SAAS, mas para que as variáveis funcionem corretamente nos estilos dos componentes é importante que carregue a linha `@import "vendor/_defaults"`
 
-
 ### Breakpoints
 
 Para definir um breakpoint carregue o comando:
+
 ```
 @include breakpoint('TAMANHO'){
     // Código
@@ -39,6 +42,7 @@ Para definir um breakpoint carregue o comando:
 ```
 
 Onde:
+
 - **small-only** = < 600px
 - **small-up** = > 600px
 - **medium-only** = < 900px
@@ -49,12 +53,24 @@ Onde:
 ### Z-Index
 
 Existem variáveis com z-index pré-definidos, para isso utilize, sem aspas, o padrão: `z-index: z-index(VALOR)`, onde:
+
 - **above** = 500
 - **modal** = 400
 - **overlay** = 300
 - **dropdown** = 200
 - **default** = 1
 - **below** = -1
+
+### Caminhos Absolutos (Absolute Paths)
+
+O arquivo `tsconfig.json` inclui alguns caminhos absolutos para importação de arquivos, todos iniciados por `@`, o que evita a utilização de `../../<arquivo>` ao importar um arquivo. Ao criar mais pastas, **é importante que atualize o arquivo** com novos caminhos absolutos.
+
+- **@/components/** = pasta de componentes
+- **@/data/** = pasta de dados
+- **@/functions/** = pasta de funções
+- **@/models/** = pasta de modelos
+- **@/pages/** = pasta de páginas
+- **@/styles/** = pasta de estilos
 
 ### Cores Globais
 
@@ -68,6 +84,10 @@ O ideal é que utilize sempre REM no lugar de PIXELS para a maior parte do códi
 
 A pasta `@import "vendor/_variables"` conta com outras variáveis de medida e padrões.
 
+#
 
+#
 
-Última alteração em **02 de setembro de 2021**.
+---
+
+Última alteração em **06 de novembro de 2022**.
