@@ -84,9 +84,9 @@ O ideal é que utilize sempre REM no lugar de PIXELS para a maior parte do códi
 
 A pasta `@import "vendor/_variables"` conta com outras variáveis de medida e padrões.
 
-\
+<br/>
 
-\
+<br/>
 
 ---
 
