@@ -8,6 +8,8 @@ Este modelo básico inclui algumas alterações pessoais em relação ao projeto
 - Eslint e Prettier configurados;
 - Toda a configuração foi feita usando Yarn.
 
+<br/>
+
 ## Esquema de Pastas
 
 **SRC:** esta pasta inclui todas as partes do projeto, organizados por:
@@ -31,6 +33,8 @@ Este modelo básico inclui algumas alterações pessoais em relação ao projeto
 
 Por padrão este projeto utiliza o pré-processador SAAS, mas para que as variáveis funcionem corretamente nos estilos dos componentes é importante que carregue a linha `@import "vendor/_defaults"`
 
+<br/>
+
 ### Breakpoints
 
 Para definir um breakpoint carregue o comando:
@@ -50,6 +54,8 @@ Onde:
 - **large-only** = < 1200px
 - **large-up** = > 1200px
 
+<br/>
+
 ### Z-Index
 
 Existem variáveis com z-index pré-definidos, para isso utilize, sem aspas, o padrão: `z-index: z-index(VALOR)`, onde:
@@ -60,6 +66,8 @@ Existem variáveis com z-index pré-definidos, para isso utilize, sem aspas, o p
 - **dropdown** = 200
 - **default** = 1
 - **below** = -1
+
+<br/>
 
 ### Caminhos Absolutos (Absolute Paths)
 
@@ -72,13 +80,19 @@ O arquivo `tsconfig.json` inclui alguns caminhos absolutos para importação de 
 - **@/pages/** = pasta de páginas
 - **@/styles/** = pasta de estilos
 
+<br/>
+
 ### Cores Globais
 
 Também tem as variáveis de cores globais (root), onde utiliza-se `color: --color-esquema-nome`, onde a personalização deve ser feita em `@import "vendor/_colors"` que já vem com alguns modelos pré-carregados.
 
+<br/>
+
 ### Converter pixels para rem
 
 O ideal é que utilize sempre REM no lugar de PIXELS para a maior parte do código, então utilize `rem(valor em px)`, pois o próprio SCSS fará a conversão. Por exemplo `rem(12)` que seria 12px será convertido para `1.33rem`.
+
+<br/>
 
 ### Outras variáveis
 
