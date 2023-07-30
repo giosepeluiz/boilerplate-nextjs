@@ -4,7 +4,7 @@ module.exports = {
     locales: ["pt-br"],
     defaultLocale: "pt-br",
   },
-  env: {
-    EXAMPLE: process.env.EXAMPLE,
+  experimental: {
+    serverComponentsExternalPackages: ["mongoose"],
   },
 };

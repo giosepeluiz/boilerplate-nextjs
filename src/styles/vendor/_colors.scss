@@ -3,37 +3,25 @@
 // ==========================================================================
 
 $schema-1: (
-  "s1-primary": #157bad,
-  "s1-secondary": #06618c,
-  "s1-success": #3cc368,
-  "s1-warning": #f5a600,
-  "s1-error": #ec5840,
-  "s1-black": #000000,
-  "s1-gray-1": #363636,
-  "s1-gray-2": #4f4f4f,
-  "s1-gray-3": #828282,
-  "s1-gray-4": #bdbdbd,
-  "s1-gray-5": #e0e0e0,
-  "s1-white": #fcfcfc,
+  "primary": #51291e,
+  "primary-alpha": #51291e50,
+  "secondary": #283d3b,
+  "tertiary": #ffc07f,
+  "success": #3cc368,
+  "success-dark": #016623,
+  "warning": #f5a600,
+  "error": #ec5840,
+  "black": #000000,
+  "gray-1": #363636,
+  "gray-2": #4f4f4f,
+  "gray-3": #828282,
+  "gray-4": #bdbdbd,
+  "gray-5": #e0e0e0,
+  "white": #fcfcfc,
 );
 
 :root {
   @each $name, $color in $schema-1 {
-    --color-#{$name}: #{$color};
-  }
-}
-
-// ==========================================================================
-// Color Scheme 2 Name
-// ==========================================================================
-
-$schema-2: (
-  "s2-primary": #3da6c8,
-  "s2-secondary": darken(#3da6c8, 12%),
-);
-
-:root {
-  @each $name, $color in $schema-2 {
     --color-#{$name}: #{$color};
   }
 }
