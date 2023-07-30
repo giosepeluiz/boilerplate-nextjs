@@ -22,8 +22,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/functions/calculateOvertime.js",
+    "src/functions/calcOvertime.ts",
+    ".next/types/**/*.ts",
+    "src/app/data/route.ts"
+  ],
   "exclude": ["node_modules"]
 }
